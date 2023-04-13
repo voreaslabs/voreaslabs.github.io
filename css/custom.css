@@ -1,0 +1,305 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+body {
+  background-color: #303030; /* GREY */
+}
+
+.team-title > div > h4 > a {
+	color: #555;
+}
+
+.title-with-subtitle > h2 {
+  margin: 0;
+}
+.title-with-subtitle > h5 {
+  color: #a0a0a0;
+}
+
+#slider-background {
+  height: auto;
+  background: url("/images/default-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#header.header-background {
+  background-color: #303030;
+  background-size: cover;
+  background-position: center center;
+}
+
+.icon-reorder:before {
+  color: #ffffff;
+}
+
+#header.sticky-header #header-wrap {
+  background-color: #303030; /* GREY */
+  border-bottom: none !important;
+}
+
+#logo {
+  padding: 20px 0;
+  max-width: 260px;
+}
+
+#header.sticky-header #logo {
+  padding: 5px 0;
+  max-width: 180px;
+}
+
+#logo img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.sidebar-logo {
+  padding: 0 !important;
+  margin: 0 0 40px 0 !important;
+}
+
+.one-page-arrow {
+  color: #ffffff;
+}
+
+.page-section {
+  padding: 80px 0 !important;
+}
+
+#section-about.page-section {
+  padding: 100px 0 80px !important;
+}
+
+#section-why {
+  background-color: #e7e7e7; /* LIGHT GREY */;
+}
+
+#section-team.page-section {
+  padding: 80px 0 40px !important;
+}
+
+.t300 {
+    font-weight: 700 !important;
+    padding-bottom: 20px;
+}
+
+#footer.dark {
+  background-color: #303030; /* GREY */
+}
+
+.footer-logo {
+  max-width: 200px;
+}
+
+.copyrights-menu a {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.copyrights-menu a:hover, .copyrights-links a:hover {
+  color: #ff6547 !important; /* GREEN */
+}
+
+.team-wrapper {
+  float: left;
+}
+
+.team-title {
+  display: flex;
+  justify-content: space-between;
+  width: 255px;
+}
+
+.team-title .social-icon {
+  margin: 5px;
+}
+
+.jobs-page {
+  line-height: 1.5 !important;
+}
+.jobs-page-body {
+  font-size: 18px !important;
+  margin-bottom: 16px !important;
+}
+.job-post {
+  font-size: 1.1em;
+}
+.job-post h3 {
+  margin: 0 !important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.job-post h4 {
+  margin-bottom: 0 !important;
+}
+.job-post h5 {
+  margin: 0 !important;
+  padding-left: 14px;
+}
+.job-post p {
+  margin-bottom: 10px;
+}
+.job-post li {
+  margin-left: 14px;
+}
+.job-post ul {
+  margin-bottom: 10px !important;
+}
+.job-post hr {
+  margin: 40px 0;
+}
+.job-post .job-description {
+  font-weight: 700;
+}
+#mlink {
+  font-weight: 700;
+}
+
+@media (max-width: 479px) {
+
+  .emphasis-title h1 {
+    font-size: 30px !important;
+  }
+
+  .emphasis-title p {
+    color: black;
+    font-weight: inherit;
+  }
+
+  /*#slider-background {
+    height: auto;
+    background: url("/images/default-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+  }*/
+
+  .container {
+    padding-left: inherit;
+  }
+
+  .team-wrapper {
+    float: none;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+
+  #header.transparent-header:not(.sticky-header) #header-wrap {
+    background-color: #303030; /* GREY */
+  }
+
+  #logo {
+    max-width: 186px;
+    padding: 5px 0 !important;
+    margin: 0 20px !important;
+    text-align: left;
+  }
+
+  #logo.sidebar-logo {
+    padding: 0 !important;
+    margin: 0 0 30px 0 !important;
+  }
+
+}
+
+
+
+/* Main "OPT OUT" text on homepage */
+h1.pl-title {
+  font-size: 52px;
+  letter-spacing: 6px;
+  text-shadow: 1px 1px 4px #000000;
+  color: #ffffff;
+}
+/* Homepage menu links */
+.pl-header-link {
+  color: white;
+  text-shadow: 0px 0px 1px #a09f9e;
+}
+/* Homepage menu links on hover */
+.pl-header-link:hover {
+  text-shadow: 0px 0px 1px #a09f9e;
+  color: #ff6547;
+}
+/* Main "Communicate securely" text on homepage */
+.pl-lead {
+  max-width:700px;
+  line-height: 1.7;
+  text-shadow: 1px 1px 4px #000000;
+  color: #ffffff;
+}
+.pl-menu-icon {
+  font-size: 2em;
+}
+.pl-blog-entry {
+  border-bottom: 0px;
+  border-top: 2px solid #f5f5f5;
+  margin-top: -2px;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* FAQ */
+/*.faq {
+  list-style: none;
+  padding-top: 20px;
+  font-size: 1.3em;
+}
+
+.faq-q {
+  font-style: italic;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+.faq-q:before {
+  content: '\51';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.faq-a {
+  padding-bottom: 20px;
+}
+
+.faq-a:before {
+  content: '\41';
+  font-style: normal;
+  font-weight: bold;
+}
+*/
+
+
+
+
+/* ------------- MailChimp form ------------ */
+/*#mc_embed_signup {
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+}
+
+#mc_embed_signup form {
+  padding: inherit;
+}
+
+#mc_embed_signup .mc-field-group.input-group label {
+  padding-left: 5px;
+}
+
+#mc_embed_signup .mc-field-group input {
+  width: initial;
+  color: #000;
+}
+*/
