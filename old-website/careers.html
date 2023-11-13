@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Voreas Laboratories Inc - Careers"
+---
+<!-- Content
+============================================= -->
+<section id="content" class="jobs-page">
+  <div class="content-wrap nopadding">
+    <div class="page-section">
+      <div class="container clearfix">
+      <div class="title" style="max-width: 900px;">
+        <h1 class="ls3 font-body">Careers at Voreas Labs</h1>
+      </div>
+      <div class="jobs-page-body">
+        Join some of the world’s foremost authorities on attack attribution
+        to tackle the most challenging cybersecurity problems of our time.
+        Our growing team of researchers, software engineers, and data engineers
+        are developing leading edge products for systemically important
+        financial institutions and government agencies. VLI has adopted a
+        hybrid workplace model and offers a generous compensation package.
+      </div>
+      <div class="jobs-page-body">
+        To learn more about our career opportunities, send your resume to
+        <span id="mlink">nospam</span> today!
+      </div>
+    </div>
+
+    <div class="container clearfix">
+    <div class="title" style="max-width: 900px;">
+      <h2 class="ls3 font-body">Current Job Openings</h2>
+    </div>
+
+    {% for job in site.jobs %}
+      <div class="job-post">
+        <h3>{{ job.job_title }}</h3>
+        <p class="job-description">{{ job.description }}</p>
+
+        <div class="job-details">
+          <h4>Responsibilities</h4>
+          <ul>
+          {% for res in job.responsibilities %}
+            <li>{{ res }}</li>
+          {% endfor %}
+          </ul>
+          <h4>Qualifications</h4>
+          <h5>Required</h5>
+          <ul>
+          {% for qs in job.qualifications.required %}
+            <li>{{ qs }}</li>
+          {% endfor %}
+          </ul>
+          {% if job.qualifications.preferred %}
+            <h5>Preferred</h5>
+            <ul>
+            {% for qs in job.qualifications.preferred %}
+              <li>{{ qs }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+        <hr />
+      </div>
+    {% endfor %}
+
+    <div class="container clearfix">
+    <div class="title" style="max-width: 900px;">
+      <h2 class="ls3 font-body">About VLI</h2>
+    </div>
+    <div class="jobs-page-body">
+      VLI is a DARPA-funded technology spinoff from the Georgia Institute
+      of Technology's Center for Cyber Operations Enquiry and Unconventional
+      Sensing (COEUS). VLI helps government agencies and systemically
+      important organizations identify and track major nation state and criminal cyber
+      actors across the Internet. VLI provides continuous, scalable, and
+      oblivious-to-adversaries tracking of attack infrastructure affecting networks of
+      interest.
+    </div>
+
+    <div class="title" style="max-width: 900px;">
+      <h4 class="ls3 font-body">Equal Opportunity</h4>
+    </div>
+    <div class="jobs-page-body">
+      VLI is an equal opportunity workplace. We are committed to equal employment
+      opportunity regardless of race, color, ancestry, religion, sex, national origin,
+      sexual orientation, age, citizenship, marital status, disability, gender
+      identity or Veteran status.
+    </div>
+    <div class="title" style="max-width: 900px;">
+      <a href="/privacy.html"> Hiring Privacy Policy</a>
+    </div>
+  </div> <!-- #content-wrap end -->
+</section> <!-- #content end -->
+
+<script>
+  /* a little bit of obfusecurity */
+  var mbox = "careers";
+  var mx = "voreas.io";
+  document.getElementById("mlink").innerHTML = `${mbox}@${mx}`;
+</script>
